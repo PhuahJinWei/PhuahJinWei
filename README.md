@@ -107,6 +107,5 @@ Right now I'm exploring:
 
 ## 📬 Contact
 
-- Portfolio / Live demos: YOUR_PORTFOLIO_LINK
 - LinkedIn: [Phuah Jin Wei](https://www.linkedin.com/in/phuahjinwei/)
 - Email: phuahmail@gmail.com
