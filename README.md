@@ -108,8 +108,5 @@ Right now I'm exploring:
 ## 📬 Contact
 
 - Portfolio / Live demos: YOUR_PORTFOLIO_LINK
-- LinkedIn: YOUR_LINKEDIN
-- Email: YOUR_EMAIL
-
-<!-- tiny note at the end -->
-<sub>Yes, this README is hand-built. No frameworks. 😎</sub>
+- LinkedIn: [Phuah Jin Wei](https://www.linkedin.com/in/phuahjinwei/)
+- Email: phuahmail@gmail.com
