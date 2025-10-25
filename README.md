@@ -94,13 +94,7 @@ Right now I'm exploring:
      If you don't like these visuals, you can delete this entire section. -->
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=transparent&hide_border=true" />
   <img height="160" src="https://github-readme-streak-stats.herokuapp.com?user=YOUR_GITHUB_USERNAME&theme=transparent&hide_border=true" />
-</p>
-
-<!-- Optional: top languages card -->
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=transparent&hide_border=true" />
 </p>
 
 ---
