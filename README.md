@@ -10,7 +10,7 @@ I build small HTML/CSS/JavaScript projects to practice programming.<br/>
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🃏 BlackJack Mobile / ブラックジャック（モバイル対応）</h3>
+      <h3>🃏 BlackJack Mobile / ブラックジャック</h3>
       <p><b>EN:</b> Classic 21-point Blackjack with special house rules.</p>
       <p><b>JP:</b> 定番ブラックジャックに独自のハウスルールを追加したバージョンです。</p>
       <p>
