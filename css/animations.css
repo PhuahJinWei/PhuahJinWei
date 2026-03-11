@@ -1,0 +1,210 @@
+/* ============================================
+   animations.css — Game Menu Animations
+   Tilt, glitch, glow effects
+   ============================================ */
+
+/* --- 3D Tilt Container --- */
+.tilt-container {
+  perspective: var(--perspective);
+  padding: 3rem 4rem;
+}
+
+.tilt-content {
+  transition: transform 0.08s ease-out;
+  will-change: transform;
+}
+
+
+/* --- Hero Entrance Animation (Persona slash-in) --- */
+@keyframes slashIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px) skewX(-8deg);
+    clip-path: inset(0 100% 0 0);
+  }
+  60% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) skewX(0);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes accentPulse {
+  0%, 100% { opacity: 0.08; }
+  50% { opacity: 0.14; }
+}
+
+.hero-animate .hero-subtitle {
+  animation: fadeSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+/* Pulsing accent slash behind hero */
+.hero h1::before {
+  animation: accentPulse 4s ease-in-out infinite;
+}
+
+
+/* --- Scroll Reveal --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered reveal for project grid children */
+.reveal-stagger > .reveal:nth-child(1) { transition-delay: 0s; }
+.reveal-stagger > .reveal:nth-child(2) { transition-delay: 0.06s; }
+.reveal-stagger > .reveal:nth-child(3) { transition-delay: 0.12s; }
+.reveal-stagger > .reveal:nth-child(4) { transition-delay: 0.18s; }
+.reveal-stagger > .reveal:nth-child(5) { transition-delay: 0.24s; }
+.reveal-stagger > .reveal:nth-child(6) { transition-delay: 0.30s; }
+.reveal-stagger > .reveal:nth-child(7) { transition-delay: 0.36s; }
+
+
+/* --- Card edge glow + diagonal accent corner on hover --- */
+.project-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--card-radius);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity var(--transition-medium);
+  box-shadow:
+    inset 0 0 30px rgba(255, 204, 0, 0.06),
+    inset 0 1px 0 rgba(255, 204, 0, 0.15),
+    0 0 15px rgba(255, 204, 0, 0.04);
+}
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
+/* Placeholder text glows on hover */
+.project-card:hover .card-image::after {
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+  color: var(--color-accent);
+}
+
+
+/* --- Page Transition: Center Expand / Shrink --- */
+@keyframes expandIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes shrinkOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.page-enter .tilt-content,
+.page-enter.tilt-content {
+  animation: expandIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+  transform-origin: 50% 50vh;    /* viewport center on load (scroll = 0) */
+}
+
+.page-exit .tilt-content,
+.page-exit.tilt-content {
+  animation: shrinkOut 0.2s cubic-bezier(0.4, 0, 1, 0.5) both;
+  /* transform-origin set by JS to account for scroll position */
+}
+
+/* Overlay — just a dark cover during navigation gap */
+.page-transition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--color-bg);
+  opacity: 1;
+  pointer-events: none;          /* safe default — never blocks clicks */
+  transition: opacity 0.15s ease;
+}
+
+.page-transition-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Only block interaction during exit transition */
+.page-transition-overlay.blocking {
+  pointer-events: all;
+}
+
+
+/* --- Subtle glitch flicker on hero (every ~8s) --- */
+@keyframes glitchFlicker {
+  0%, 95%, 100% { opacity: 1; }
+  96% { opacity: 0.8; transform: translateX(2px); }
+  97% { opacity: 1; transform: translateX(-1px); }
+  98% { opacity: 0.9; transform: translateX(1px); }
+  99% { opacity: 1; transform: translateX(0); }
+}
+
+.hero h1 {
+  animation: slashIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both,
+             glitchFlicker 8s ease-in-out 2s infinite;
+}
+
+
+/* ============================================
+   Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .tilt-content {
+    transform: none !important;
+    transition: none !important;
+  }
+
+.page-transition-overlay {
+    transition: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}

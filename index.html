@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phuah Jin Wei | Portfolio</title>
+  <meta name="description" content="Personal projects built with HTML, CSS & JavaScript — games and tools by Phuah Jin Wei.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Page Transition Overlay (hidden on enter, shown on exit) -->
+  <div class="page-transition-overlay hidden"></div>
+
+  <!-- 3D Tilt Wrapper — page-enter triggers expandIn animation immediately -->
+  <div class="tilt-container page-enter">
+    <div class="tilt-content">
+
+      <!-- Header -->
+      <header class="site-header">
+        <div class="container">
+          <a href="index.html" class="logo">Phuah Jin Wei</a>
+          <nav>
+            <a href="https://github.com/PhuahJinWei"
+               class="break-button small"
+               target="_blank"
+               rel="noopener noreferrer">
+              GitHub
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class="hero hero-animate">
+        <div class="container">
+          <h1>Games &amp; Tools</h1>
+          <p class="hero-subtitle">Personal projects built with HTML, CSS &amp; JavaScript</p>
+        </div>
+      </section>
+
+      <!-- Search -->
+      <div class="search-bar">
+        <div class="container">
+          <div class="search-wrapper">
+            <span class="search-icon">&#9906;</span>
+            <input type="text" id="project-search" placeholder="SEARCH PROJECTS..." autocomplete="off" spellcheck="false">
+            <span class="search-clear" id="search-clear">&times;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects — built dynamically by card-renderer.js from projects-data.js -->
+      <div id="projects-container"></div>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <p><a href="mailto:phuahmail@gmail.com">phuahmail@gmail.com</a></p>
+          <p>Built with vanilla HTML, CSS & JS</p>
+        </div>
+      </footer>
+
+    </div><!-- /.tilt-content -->
+  </div><!-- /.tilt-container -->
+
+  <!-- iOS Gyroscope Permission Prompt -->
+  <div class="gyro-prompt hidden" id="gyro-prompt">
+    <span class="gyro-prompt-text">TAP TO ENABLE TILT</span>
+  </div>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/card-renderer.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

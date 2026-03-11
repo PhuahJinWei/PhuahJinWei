@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project | Phuah Jin Wei</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+</head>
+<body>
+
+  <div class="page-transition-overlay hidden"></div>
+
+  <div class="tilt-container page-enter"><div class="tilt-content">
+  <main class="project-detail">
+    <div class="container">
+
+      <a href="../index.html" class="back-button break-button">
+        <span class="arrow">&larr;</span> Back to Projects
+      </a>
+
+      <article class="project-content reveal" id="project-article">
+
+        <div class="project-hero-image" id="project-hero" data-placeholder="">
+          <!-- Future: <img> tag will be injected here by renderer if image exists -->
+        </div>
+
+        <div class="project-header">
+          <h1 id="project-title"></h1>
+          <span class="card-tag" id="project-tag"></span>
+        </div>
+
+        <div class="project-description">
+          <div class="desc-block" lang="en">
+            <h3>EN</h3>
+            <p id="project-desc-en"></p>
+          </div>
+          <div class="desc-block" lang="ja">
+            <h3>JP</h3>
+            <p id="project-desc-jp"></p>
+          </div>
+        </div>
+
+        <div class="project-links">
+          <a id="project-demo-link"
+             class="break-button primary"
+             target="_blank" rel="noopener noreferrer">
+            &#9654; Live Demo
+          </a>
+          <a id="project-source-link"
+             class="break-button secondary"
+             target="_blank" rel="noopener noreferrer">
+            Source Code
+          </a>
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+  </div></div>
+
+  <!-- iOS Gyroscope Permission Prompt -->
+  <div class="gyro-prompt hidden" id="gyro-prompt">
+    <span class="gyro-prompt-text">TAP TO ENABLE TILT</span>
+  </div>
+
+  <script src="../js/projects-data.js"></script>
+  <script src="../js/project-renderer.js"></script>
+  <script src="../js/tilt.js"></script>
+  <script src="../js/scroll-reveal.js"></script>
+  <script src="../js/audio.js"></script>
+  <script src="../js/transitions.js"></script>
+</body>
+</html>
