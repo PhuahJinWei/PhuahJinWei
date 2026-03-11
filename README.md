@@ -5,7 +5,7 @@ I build small HTML/CSS/JavaScript projects to practice programming.<br/>
 
 ---
 
-### Portfolio ---> [Here こちら](https://phuahjinwei.github.io/PhuahJinWei/)
+### Portfolio  ----------> [Here こちら](https://phuahjinwei.github.io/PhuahJinWei/) <----------
 
 ---
 
