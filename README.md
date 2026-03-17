@@ -6,7 +6,7 @@ I build small HTML/CSS/JavaScript projects to practice programming.<br/>
 ---
 
 <div align="center">
-	Portfolio ---> <a href="https://phuahjinwei.github.io/PDF-Editor/">Click Here こちら</a> <--- 
+	Portfolio ---> <a href="https://phuahjinwei.github.io/PhuahJinWei/">Click Here こちら</a> <--- 
 </div>
 
 ---
