@@ -50,6 +50,20 @@ window.PROJECTS = [
     actionLabel: 'PLAY'
   },
   {
+    id: 'wordle-jp',
+    title: 'Wordle JP',
+    tag: 'game',
+    shortDesc: 'A Japanese Wordle in hiragana. Guess the hidden word within the allotted tries.',
+    descEN: 'A Japanese Wordle in hiragana. Guess the hidden word within the allotted tries.',
+    descJP: 'ひらがなで遊ぶワードル。隠された単語を制限回数以内に当てよう。',
+    demoUrl: 'https://phuahjinwei.github.io/Wordle-JP/',
+    sourceUrl: 'https://github.com/PhuahJinWei/Wordle-JP',
+    heroPlaceholder: 'Wordle JP \u2014 Screenshot / Preview',
+    cardPlaceholder: 'Wordle JP',
+	cardImage: 'https://raw.githubusercontent.com/PhuahJinWei/Wordle-JP/main/asset/mypagePic.png',
+    actionLabel: 'PLAY'
+  },
+  {
     id: 'tetris',
     title: 'Tetris Simulator',
     tag: 'game',
