@@ -5,7 +5,9 @@ I build small HTML/CSS/JavaScript projects to practice programming.<br/>
 
 ---
 
-### Portfolio  ----------> [Here こちら](https://phuahjinwei.github.io/PhuahJinWei/) <----------
+<div align="center">
+	Portfolio ---> <a href="https://phuahjinwei.github.io/PDF-Editor/">Click Here こちら</a> <--- 
+</div>
 
 ---
 
@@ -63,12 +65,17 @@ I build small HTML/CSS/JavaScript projects to practice programming.<br/>
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <h3><a href="https://github.com/PhuahJinWei/Wordle-JP">あ Wordle JP</a></h3>
+      <p><b>EN:</b> A Japanese Wordle in hiragana. Guess the hidden word within the allotted tries.</p>
+	  <p><b>JP:</b> ひらがなで遊ぶワードル。隠された単語を制限回数以内に当てよう。</p>
+      <a href="https://phuahjinwei.github.io/Wordle-JP/">▶ Play Demo</a> · <a href="https://github.com/PhuahJinWei/Wordle-JP">Source Code</a>
+    </td>
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/PhuahJinWei/Suika-Simulator">🍉 Suike / スイケ（スイカゲーム再現）</a></h3>
       <p><b>EN:</b> Inspired by the popular Suika fruit-merging game.</p>
 	  <p><b>JP:</b> 話題のスイカゲーム風「フルーツ合体」ゲームを再現しました。</p>
       <a href="https://phuahjinwei.github.io/Suika-Simulator/src/suikeGame.html">▶ Play Demo</a> · <a href="https://github.com/PhuahJinWei/Suika-Simulator">Source Code</a>
     </td>
-    <td width="50%"></td>
   </tr>
 </table>
 
