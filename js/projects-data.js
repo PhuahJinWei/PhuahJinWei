@@ -7,6 +7,20 @@
  * To add a new project, append an object to the PROJECTS array below.
  */
 window.PROJECTS = [
+{
+    id: 'chiikawaland',
+    title: 'ちいかわ ランド',
+    tag: 'game',
+    shortDesc: 'A browser-based Chiikawa virtual pet game.',
+    descEN: 'A browser-based Chiikawa virtual pet game.',
+    descJP: 'Webのちいかわペットゲーム',
+    demoUrl: 'https://phuahjinwei.github.io/Chiikawa-Land/',
+    sourceUrl: 'https://github.com/PhuahJinWei/Chiikawa-Land',
+    heroPlaceholder: 'BlackJack Mobile \u2014 Screenshot / Preview',
+    cardPlaceholder: 'BlackJack Mobile',
+    cardImage: 'https://raw.githubusercontent.com/PhuahJinWei/Chiikawa-Land/main/asset/mypagePic.png',
+    actionLabel: 'PLAY'
+  },  
   {
     id: 'blackjack',
     title: 'BlackJack Mobile',
