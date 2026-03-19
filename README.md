@@ -37,6 +37,16 @@ I build small HTML/CSS/JavaScript projects to practice programming.<br/>
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
+      <h3><a href="https://github.com/PhuahJinWei/Chiikawa-Land">ちいかわランド</a></h3>
+      <p><b>EN:</b> A browser-based Chiikawa virtual pet game.</p>
+	  <p><b>JP:</b> Webのちいかわペットゲーム</p>
+      <a href="https://phuahjinwei.github.io/Chiikawa-Land/">▶ Play Demo</a> · <a href="https://github.com/PhuahJinWei/Chiikawa-Land">Source Code</a>
+    </td>
+    <td width="50%" valign="top">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/PhuahJinWei/BlackJack-Mobile">🃏 BlackJack Mobile / ブラックジャック</a></h3>
       <p><b>EN:</b> Classic 21-point Blackjack with special house rules.</p>
 	  <p><b>JP:</b> 定番ブラックジャックに独自のハウスルールを追加したバージョンです。</p>
