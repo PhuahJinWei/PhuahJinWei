@@ -16,9 +16,9 @@ window.PROJECTS = [
     descJP: 'Webのちいかわペットゲーム',
     demoUrl: 'https://phuahjinwei.github.io/Chiikawa-Land/',
     sourceUrl: 'https://github.com/PhuahJinWei/Chiikawa-Land',
-    heroPlaceholder: 'BlackJack Mobile \u2014 Screenshot / Preview',
-    cardPlaceholder: 'BlackJack Mobile',
-    cardImage: 'https://raw.githubusercontent.com/PhuahJinWei/Chiikawa-Land/main/asset/mypagePic.png',
+    heroPlaceholder: 'Chiikawa Land \u2014 Screenshot / Preview',
+    cardPlaceholder: 'Chiikawa Land',
+    cardImage: 'https://raw.githubusercontent.com/PhuahJinWei/Chiikawa-Land/main/asset/images/mypagePic.png',
     actionLabel: 'PLAY'
   },  
   {
