@@ -56,7 +56,7 @@ I build small HTML/CSS/JavaScript projects to practice programming.<br/>
       <h3><a href="https://github.com/PhuahJinWei/Rogue-Like-Gun-Mini-Game">⚔️ Salvation Breakers</a></h3>
       <p><b>EN:</b> From-scratch remake inspired by NIKKE’s limited-time mini game. Rogue-like auto-play: collect equipment & guns to defend your base.</p>
 	  <p><b>JP:</b> NIKKEの期間限定ミニゲームに着想を得てゼロから再現。装備や銃を集めて拠点を防衛するローグライク風オートプレイです。</p>
-      <a href="https://phuahjinwei.github.io/Rogue-Like-Gun-Mini-Game/">▶ Play Demo</a> · <a href="https://github.com/PhuahJinWei/Rogue-Like-Gun-Mini-Game">Source Code</a>
+      <a href="https://phuahjinwei.github.io/Salvation-Breakers/">▶ Play Demo</a> · <a href="https://github.com/PhuahJinWei/Salvation-Breakers">Source Code</a>
     </td>
   </tr>
   <tr>
